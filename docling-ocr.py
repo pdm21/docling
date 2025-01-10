@@ -20,11 +20,7 @@ def main():
     pipeline_options.table_structure_options.do_cell_matching = True
 
     # Any of the OCR options can be used:EasyOcrOptions, TesseractOcrOptions, TesseractCliOcrOptions, OcrMacOptions(Mac only), RapidOcrOptions
-    # ocr_options = EasyOcrOptions(force_full_page_ocr=True)
-    # ocr_options = TesseractOcrOptions(force_full_page_ocr=True)
-    # ocr_options = OcrMacOptions(force_full_page_ocr=True)
-    # ocr_options = RapidOcrOptions(force_full_page_ocr=True)
-    ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
+    ocr_options = EasyOcrOptions(force_full_page_ocr=True)
     pipeline_options.ocr_options = ocr_options
 
     converter = DocumentConverter(
