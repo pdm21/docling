@@ -2,5 +2,5 @@
 
 ## Installation
 
-brew install tesseract
-pip3 install docling
+- brew install tesseract
+- pip3 install docling
